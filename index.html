@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title> Svenka muntlig presentation </title>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+    <style type='text/css'>
+      .menu > li {
+      display:inline-block;
+      font-weight:bold;
+      padding:6px 10px;
+      cursor:pointer;
+      border:2px solid blue;
+      margin:5px;
+      }
+      .container {
+      border:2px solid black;
+      margin:5px;
+      }
+      .container > div {
+      display:none;
+      }
+      .container > div:first-child {
+      display:block;
+      }
+    </style>
+    <script type='text/javascript'>//<![CDATA[ 
+      $(window).load(function(){
+      $('.menu>li').on('click',function(e){
+          $('.container>.'+ e.target.classList[0]).show().siblings().hide();
+      });
+      });//]]>  
+      
+    </script>
+  </head>
+  
+  <body>
+    <ul class="menu">
+      <li class="S1">Krypting</li>
+      <li class="S2">Symmetriga nyckel krypting</li>
+      <li class="S3">RSA</li>
+    </ul>
+    <div class="container">
+      <div class="S1">
+        <h3> Krypting </h3>
+      </div>
+      <div class="S2">
+        <h3> Symmetriga nyckel krypting </h3>
+      </div>
+      <div class="S3">
+        <h3> RSA </h3>
+      </div>
+    </div>
+  </body>
+  
+</html>
