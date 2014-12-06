@@ -12,7 +12,8 @@ slide 4: RSA kaava.
 
 Esittäytyminen:
 
-jag är .....  + jag är ....
+jag är ...../jag heter
+jag är ..../jag heter
 vi studierar datavetenskap
 vår presentation handlar om kryptering
 
@@ -22,9 +23,19 @@ teemat:
 
 vi har tree teman som är 'kryptering', 'symmetrisk kryptering' och 'asymmetrisk kryptering'.
 
-kryptering:
+kryptering: // näytelmä, missä visualisoimme kryptauksen tarkoitusta
+1. E --Msg--> M
+2. Nyt huomataan "stalkkaajat". MITÄ TEHDÄ?
+3. E --Crypt(msg)-> C_msg
+4. E --C_msg--> M
+5. (っ◕‿◕)っ
+
+Där finns karaktär kryptering men vi ska berätta om blockkryptering. 
 
 symmetrisk kryptering:
+
+Symmetrisk kryptering är ett form av kryptering som användas samman nyckel för kryptering och dekryptering.
+Avsändare och mottagare har samma nyckel och därför kan inte alla andra läsa meddelande som har skickat. 
 
 blockchiffer:
 
@@ -36,5 +47,11 @@ ECB står för engelska ord 'electronic codebook'. Det är enkelt metod av block
 varje block ska krypteras separat. Kryptering användas en nyckel som är samma för alla blocken.
 
 CBC:
+
+CBC påminnar ECB men ECB blocken beror inte på varandra. CBC står för 'cipher block chaining'. 
+Det betyder 'kedjeanvändande blockchiffer'.  Förre kryptering av blocket, CBC gör xor-operation om block och
+sista krypterat block. Så vi har en kedja.
+
+CFB:
 
 asymmetrisk kryptering:
