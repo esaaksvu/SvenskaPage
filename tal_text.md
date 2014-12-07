@@ -24,6 +24,7 @@ teemat:
 vi har tree teman som är 'kryptering', 'symmetrisk kryptering' och 'asymmetrisk kryptering'.
 
 kryptering: // näytelmä, missä visualisoimme kryptauksen tarkoitusta
+
 1. E --Msg--> M
 2. Nyt huomataan "stalkkaajat". MITÄ TEHDÄ?
 3. E --Crypt(msg)-> C_msg
