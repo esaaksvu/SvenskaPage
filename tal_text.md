@@ -30,7 +30,7 @@ kryptering: // näytelmä, missä visualisoimme kryptauksen tarkoitusta
 4. E --C_msg--> M
 5. (っ◕‿◕)っ
 
-Där finns karaktär kryptering men vi ska berätta om blockkryptering. 
+Där finns karaktärkryptering men vi ska berätta om blockkryptering. 
 
 symmetrisk kryptering:
 
@@ -54,4 +54,9 @@ sista krypterat block. Så vi har en kedja.
 
 CFB:
 
+CFB står för 'cipher feedback'. CFB krypterar IV eller sista blocken med nyckel och sen gör xor för resultatblocken och nästa block av meddelandet. CFB också har kedjning.
+
 asymmetrisk kryptering:
+
+Asymmetrisk kyrptering användar inte samma nyckel för kryptering och dekryptering. Asymmetrisk kyrptering användar ett nyckelpar. En nyckel är öppen('publik') för att kryptera med och en egen privat nyckel för att kunna dekryptera.
+RSA är en asymmertrisk kryptering program.
